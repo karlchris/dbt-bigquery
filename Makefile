@@ -4,8 +4,7 @@ GCP_AUTH := ${HOME}/.config/gcloud
 
 build-dbt:
 	@echo "Building dbt image"
-	@docker build -f projects/dbt/Dockerfile projects/dbt \
-	-t dbt
+	@docker build -t dbt .
 
 run-dbt:
 	@echo "Running dbt in container"
